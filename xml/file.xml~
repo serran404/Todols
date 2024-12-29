@@ -1,0 +1,9 @@
+<root dir="~/todo/xml/" ingress="hello I am root">root
+<kth dir="~/repos/" ingress="this is KTH">KTH
+<prutt prio="lite" dir="~/repos/java/prutt/">prutt
+<projekt prio="viktig" dir="~/repos/java/prutt/projekt/" text="Gor projektet">Påbörja projektet</projekt>
+<KS prio="lite" >Plugga infor quiz</KS>
+</prutt>
+<linalg prio="medel" datum="02/12/24">Linalg</linalg>
+</kth>
+</root>
