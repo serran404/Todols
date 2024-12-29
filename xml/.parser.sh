@@ -46,8 +46,9 @@ function parser_attributes() {
 declare -A attribute_hashes=( )
 missingStringEnd=false
 key=""
-declare -a tag_stack=
+declare -a tag_stack=()
 indent_level=0
+counter=0
 while read_xml; do
 	CONTENT=$(echo ${CONTENT})
 	IFS=" " read -ra parts <<< "$ENTITY"
@@ -76,13 +77,13 @@ while read_xml; do
 			# this is a child to the parent tag_stack[-1]
 			# rest of actions on children
 			# print the content and the tag with the color stored in attributes[prio]
+			counter=$((counter+1))
 
 			prio=${RESET}
 			[[ -n ${attributes["prio"]} ]] && prio=${attributes["prio"]}
 			color=${urgencies["${prio:1:-1}"]:-${RESET}}
 			tabs=$(printf "%${indent_level}s")
-
-			echo -e "$color ${tabs// /'    '}${CONTENT}  [${parts[0]}]  [${attributes["datum"]:-""}]${RESET}"
+			echo -e "${counter}.$color ${tabs// /'    '}${CONTENT}  [${parts[0]}]  [${attributes["datum"]:-""}]${RESET}"
 
 			((indent_level++)) # next is indented further
 		fi
