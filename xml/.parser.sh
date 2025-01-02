@@ -49,6 +49,9 @@ key=""
 declare -a tag_stack=()
 indent_level=0
 counter=0
+echo ""
+echo -e "${GREEN}TODO list:${RESET}"
+echo "=========="
 while read_xml; do
 	CONTENT=$(echo ${CONTENT})
 	IFS=" " read -ra parts <<< "$ENTITY"
@@ -94,3 +97,4 @@ while read_xml; do
 		echo "string tog inte slut"
        	fi
 done < ~/todo/xml/file.xml # sends file.xml to stdin
+echo ""
