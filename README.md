@@ -6,7 +6,7 @@ I wanted to have a working todolist but struggled to make anything worked, so I 
 
 ## `todo.sh`
 
-The `todo.sh` file is very simple, and I use it as a placeholder for the actual program. The ideas I have are listed in a somewhat free way, hopefully they are understandable. I am unaware if they are able to make in my freetime but hopefully they will be added to the program. I am right working on adding todos to an xml file.
+The `todo.sh` file is very simple, and I use it as a placeholder for the actual program. The ideas I have are listed in a somewhat free way, hopefully they are understandable. I am unaware if they are able to make in my freetime but hopefully they will be added to the program. I am right now not working on the project, but using it every day.
 
 # Example
 
