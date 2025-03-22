@@ -10,7 +10,7 @@ The `todo.sh` file is very simple, and I use it as a placeholder for the actual 
 
 # Example
 
-        > ./todo.sh todo.txt
+        > todols
         TODO List:
         ==========
         1. Make a github repo
