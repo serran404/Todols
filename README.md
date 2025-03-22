@@ -24,5 +24,47 @@ where the todos are colored based on the last word in the `todo.txt` file.
 | medel         | Yellow        |
 | lite          | Cyan          |
 | övrigt        | Magenta       |
+| klar		| Green		|
 
 These are swedish words, I suggest changing them if you plan to use this at this early stage.
+
+## Wrapper
+
+The wrapper has a few options that are
+
+> -a, --add=tag
+
+The tag to be added. 
+
+> -p, --parent_tag=tag
+
+The tag of the parent which the new tag should be placed under.
+
+> -r, --remove=tag
+
+Tag to be removed, if this is a parent tag it will ask if you wish to remove its children as well.
+
+> -h, --help
+
+This does nothing.
+
+> -P, --prio=keyword
+
+The coloring of the tag, the keyword is one of the above
+
+> -d, --due_date=DD/MM/YY
+
+Sets a due date and will show days remaining, eg. 2 dagar kvar. Whenever this is negative it will be shown in caps except if it has the priority klar, when its done; the countdown does not disappear though.
+
+> -c, --clear_todo=tag
+
+Makes a todo cleared which means it has the priority klar, eg. done. 
+
+> -C, --change_tag=tag
+
+Changes the priority of a specific tag.
+
+> -R, --remove_all_cleared
+
+This removes all tags with the priority klar. It removes all todos that are complete.
+

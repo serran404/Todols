@@ -1,0 +1,18 @@
+<root dir="~/todo/xml/" ingress="hello I am root">root
+<resa prio="övrigt" datum="">Planera Danmark!</resa>
+<scout prio="lite">Scout
+</scout>
+<kth>KTH
+<pde prio="klar" datum="12/03/25">PDE
+</pde>
+<grund prio="lite" datum="">Analysens Grunder
+</grund>
+<disc prio="lite" datum="">Diskret Matematik
+<grupp prio="-" datum="">Gruppteori
+<del3 prio="medel" datum="">Del 3</del3>
+<del2 prio="medel" datum="">Del 2</del2>
+<del1 prio="medel" datum="">Del 1</del1>
+</grupp>
+<err prio="klar" datum="">Error correcting codes</err>
+</disc>
+</kth>

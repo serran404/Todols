@@ -1,10 +1,12 @@
 <root dir="~/todo/xml/" ingress="hello I am root">root
-<Scout  prio="lite">Scout</Scout>
-<kth dir="~/repos/" ingress="this is KTH">KTH
-<linalg  prio="medel" datum="03/04/15">Plugga LinAlg</linalg>
-<prutt prio="lite" dir="~/repos/java/prutt/">prutt
-<projekt prio="viktig" dir="~/repos/java/prutt/projekt/" text="Gor projektet">Påbörja projektet</projekt>
-<KS prio="lite" >Plugga infor quiz</KS>
-</prutt>
+<resa prio="övrigt" datum="">Planera Danmark!</resa>
+<scout prio="lite">Scout
+</scout>
+<kth>KTH
+<pde prio="klar" datum="12/03/25">PDE
+</pde>
+<grund prio="lite" datum="">Analysens Grunder
+</grund>
+<disc prio="klar" datum="">Diskret Matematik
+</disc>
 </kth>
-</root>

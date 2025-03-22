@@ -21,9 +21,7 @@ function removeTodo() {
 
 	if (( start_line == end_line )); then
 		sed -i "${start_line}d" ~/todo/xml/file.xml
-	elif (( start_line + 1 == end_line )); then
-		sed -i "/<${tag}[ >]/,/<\/${tag}>/d" ~/todo/xml/file.xml
-	elif (( start_line + 1 < end_line )); then
+	elif (( start_line < end_line )); then
 		# ask for confirmation
 		local answer
 		echo "The $tag todo contains multiple todos."

@@ -1,0 +1,30 @@
+This is a beginning to a manpage for my todols. 
+
+After every command the to-do list is shown, and if no OPTION is set it is only shown.
+
+What attributes will be shown is configured in the settings file (I have not created this yet tihi).
+
+OPTIONS
+	-a NAME, --add=NAME
+	To add a to-do with the tag NAME to the tree.
+
+	-p TAG, --parent_tag=TAG
+	If -a is active this adds the to-do beneath the parent TAG.
+
+	-r TAG, --remove=TAG
+	Removes the to-do with the tag TAG. If this contains multiple to-dos,
+	it is a container/parent, it asks for confirmation.
+
+	-h, --help
+	Gives some helpful info.
+
+SETTINGS
+
+These options will be configured in the settings file but as that does not exist I have these here
+
+	-P PRIO, --priority=PRIO
+	How important the to-do is. The to-do is colored with the scheme:
+	viktig: RED, medel: YELLOW, lite: CYAN, övrigt: MAGENTA
+	
+	-d DATE, --due_date=DATE
+	When the task is supposed to be finished.

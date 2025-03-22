@@ -1,0 +1,47 @@
+<root dir="~/todo/xml/" ingress="hello I am root">root
+<Scout prio="lite">Scout
+</Scout>
+<kth>KTH
+<csn prio="-" datum="06/01/25">Studieförsäkring</csn>
+<linalg  prio="medel" datum="">Plugga LinAlg
+<kap1 prio="viktig" datum="03/01/25">Läs klart kap. 1</kap1>
+</linalg>
+<prutt prio="lite">Programutv. teknik
+<ks prio="medel" datum="08/01/25">KS
+<pu prio="medel" datum="">Programutvecklingsteknik o begrepp</pu>
+<ks_design prio="medel" datum="">Plugga designmönster
+<ytlig prio="medel" datum="">Ytliga kunskaper
+<template prio="klar" datum="">Template Method</template>
+<state prio="klar" datum="">State</state>
+<facade prio="klar" datum="">Facade</facade>
+<proxy prio="klar" datum="">Proxy</proxy>
+<mediator prio="klar" datum="">Mediator</mediator>
+</ytlig>
+<djup prio="medel" datum="">Djupare kunskaper
+<factory prio="klar" datum="">Factory teknik</factory>
+<composite prio="klar" datum="">Composite</composite>
+<iterator prio="klar" datum="">Iterator</iterator>
+<singleton prio="klar" datum="">Singleton</singleton>
+<mvc prio="klar" datum="">Model View Control</mvc>
+<Strategy prio="klar" datum="">Strategy</Strategy>
+<Decorator prio="klar" datum="">Decorator</Decorator>
+<Observer prio="klar" datum="">Observer</Observer>
+</djup>
+</ks_design>
+<ks_uml prio="medel" datum="">Plugga UML</ks_uml>
+</ks>
+<projekt prio="lite" datum="07/01/25">Projektet
+<check prio="klar" datum="">Att sätta i chack
+<checkcheck2 prio="klar" datum="">Förbättra checkCheck</checkcheck2>
+</check>
+<boka prio="medel" datum="">Fixa bokningen</boka>
+<uml prio="lite" datum="">Skapa UML diagram</uml>
+</projekt>
+</prutt>
+</kth>
+<todols prio="övrigt" datum="">Todols
+<custom prio="övrigt" datum="">Fixa customizability, typ som .bashrc fil</custom>
+<avklarad prio="övrigt" datum="">Avklarade to-dos ska inte vara fetstilta och inte visa datum</avklarad>
+<rm_clear prio="övrigt" datum="">Funktion för att ta bort alla avklarade to-do</rm_clear>
+<mult prio="lite" datum="">Ha flera olika to-do listor</mult>
+</todols>

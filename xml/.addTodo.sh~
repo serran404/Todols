@@ -5,7 +5,10 @@
 
 function insert_new_line() {
 	parent_line=$1 ; parent_line=$((parent_line + 1))
+	echo $parent_line
+	echo $2
 	string="<$2 $4>$3</$2>"
+	echo $string
 	sed -i "${parent_line}i${string}" ~/todo/xml/file.xml
 }
 
@@ -14,8 +17,12 @@ function locateParent() {
 	parent_tag=$1
 	if [[ $(grep -c "<$2" ~/todo/xml/file.xml ) -eq 0 ]]; then
 		line_number=$( sed -n "/<${parent_tag}[[:space:]>]/=" ~/todo/xml/file.xml)
+		echo $parent_tag
+		echo $line_number
 		[[ -n $line_number ]] && ( \
 		createParent ${line_number} ;
+		echo $line_number
+		echo $2
 		insert_new_line ${line_number} "$2" "$3" "$4" ) ||
 		( echo "That tag does not exist" ; exit 1 )
 

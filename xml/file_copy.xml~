@@ -1,0 +1,9 @@
+<root dir="~/todo/xml/" ingress="hello I am root">root
+<Scout prio="lite">Scout
+<narvaro prio="viktig" datum="31/12/24">Logga närvaro på scoutnet
+</narvaro>
+</Scout>
+<kth>KTH
+<linalg  prio="medel" datum="03/04/15">Plugga LinAlg</linalg>
+<prutt prio="lite">Programutv. teknik</prutt>
+</kth>

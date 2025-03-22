@@ -14,19 +14,17 @@ function removeTodo() {
 	local end_line=$(sed -n "/<\/${tag}>/=" ~/todo/xml/file.xml)
 	# IMPORTANT
 	# Add checks if the tag does not exist, right now it deletes everything
-	if [[ $(grep -c "<${tag} .*>" ~/todo/xml/file.xml) -eq 0 ]]; then
-		echo "The tag does not exist" 
-		exit 2
+	echo $( grep -c "<${tag}" ~/todo/xml/file.xml)
+	if [[ $(grep -c "<${tag}" ~/todo/xml/file.xml) -eq 0 ]]; then
+		echo "The tag does not exist" | exit 2
 	fi
 
 	if (( start_line == end_line )); then
 		sed -i "${start_line}d" ~/todo/xml/file.xml
-	elif (( start_line + 1 == end_line )); then
-		sed -i "/<${tag}[ >]/,/<\/${tag}>/d" ~/todo/xml/file.xml
-	elif (( start_line + 1 < end_line )); then
+	elif (( start_line < end_line )); then
 		# ask for confirmation
 		local answer
-		echo "The $tag todo contains multiple todos."
+		echo -n "This contains multiple todos."
 		echo "Do you still wish to remove this tag and all its children? (yes/no): "
 		while :; do
 			read answer

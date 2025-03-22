@@ -93,6 +93,7 @@ function xml_parser() {
 
 				local prio=${RESET}
 				[[ -n ${attributes["prio"]} ]] && prio=${attributes["prio"]}
+				echo $prio
 				color=${urgencies["${prio:1:-1}"]:-${RESET}}
 				date=${attributes["datum"]:-""}
 				tabs=$(printf "%${indent_level}s")
